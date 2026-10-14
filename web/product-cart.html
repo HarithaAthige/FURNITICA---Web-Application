@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <!-- product-cart07:06-->
+    <head>
+        <!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Furnitica - Minimalist Furniture HTML Template</title>
+
+        <meta name="keywords" content="Furniture, Decor, Interior">
+        <meta name="description" content="Furnitica - Minimalist Furniture HTML Template">
+        <meta name="author" content="tivatheme">
+
+        <!-- Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+        <!-- libs CSS -->
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
+        <link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
+        <link rel="stylesheet" href="libs/nivo-slider/css/style.css">
+        <link rel="stylesheet" href="libs/font-material/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="libs/slider-range/css/jslider.css">
+        <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="libs/slick-slider/css/slick.css">
+        <link rel="stylesheet" href="libs/slick-slider/css/slick-theme.css">
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="css/vendor/font-awesome.css">
+        <link rel="stylesheet" href="css/vendor/flaticon/flaticon.css">
+        <link rel="stylesheet" href="css/vendor/slick.css">
+        <link rel="stylesheet" href="css/vendor/slick-theme.css">
+        <link rel="stylesheet" href="css/vendor/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/vendor/sal.css">
+        <link rel="stylesheet" href="css/vendor/magnific-popup.css">
+        <link rel="stylesheet" href="css/vendor/base.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
+
+        <link rel="stylesheet" href="css/notification.css">
+
+        <!-- Template CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reponsive.css">
+    </head>
+
+    <body class="product-cart checkout-cart blog" onload="loadCartItems();">
+
+
+        <!-- main content -->
+        <div class="main-content" id="cart">
+            <!-- main -->
+            <div id="wrapper-site">
+                <main class="main-wrapper">
+
+                    <!-- header desktop -->
+                    <div class="header-top d-xs-none ">
+                        <div class="container">
+                            <div class="row">
+                                <!-- logo -->
+                                <div class="col-sm-2 col-md-2 d-flex align-items-center">
+                                    <div id="logo">
+                                        <a href="home3.html">
+                                            <img src="img/home/logo.png" alt="logo" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- menu -->
+                                <div class="col-sm-5 col-md-5 align-items-center justify-content-center navbar-expand-md main-menu">
+                                    <div class="menu navbar collapse navbar-collapse">
+                                        <ul class="menu-top navbar-nav">
+                                            <li>
+                                                <a href="home3.html" class="parent">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" class="parent">Contact US</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- search and acount -->
+                                <div class="col-sm-5 col-md-5 d-flex align-items-center justify-content-end" id="search_widget">
+
+                                    <div id="block_myaccount_info" class="hidden-sm-down dropdown d-flex align-items-center">
+                                        <div class="myaccount-title">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <a href="#acount" data-toggle="collapse" class="acount">
+                                                <span>View More</span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                        <div id="acount" class="collapse" style="width: 150px;">
+                                            <div class="account-list-content">
+                                                <div>
+                                                    <a class="login" href="user-acount.html" rel="nofollow" title="Log in to your customer account">
+                                                        <i class="fa fa-cog"></i>
+                                                        <span>My Account</span>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a class="login" href="user-login.html" rel="nofollow" title="Log in to your customer account">
+                                                        <i class="fa fa-sign-in"></i>
+                                                        <span>Sign in</span>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a class="register" href="user-register.html" rel="nofollow" title="Register Account">
+                                                        <i class="fa fa-user"></i>
+                                                        <span>Register Account</span>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a class="check-out" href="product-checkout.html" rel="nofollow" title="Checkout">
+                                                        <i class="fa fa-check" aria-hidden="true"></i>Checkout
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="desktop_cart">
+                                        <div class="blockcart block-cart cart-preview tiva-toggle">
+                                            <div class="header-cart tiva-toggle-btn">
+                                                <span class="cart-products-count">1</span>
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="dropdown-content">
+                                                <div class="cart-content">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="product-image">
+                                                                    <a>
+                                                                        <img src="img/other/1.jpg" alt="Product">
+                                                                    </a>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="product-name">
+                                                                        <h4>FURNITICA</h4><br/>
+                                                                        <h6>Best products from best place</h6>
+                                                                    </div>
+                                                                </td>  
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td colspan="3" class="d-flex justify-content-center">
+                                                                    <div class="cart-button">
+                                                                        <a href="product-cart.html" title="View Cart">View Cart</a>
+                                                                        <a href="product-checkout.html" title="Checkout">Checkout</a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- breadcrumb -->
+                    <nav class="breadcrumb-bg">
+                        <div class="container no-index">
+                            <div class="breadcrumb">
+                                <ol>
+                                    <li>
+                                        <a href="home3.html">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>Shopping Cart</span>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- Start Cart Area  -->
+                    <div class="axil-product-cart-area axil-section-gap">
+                        <div class="container">
+                            <div class="axil-product-cart-wrap">
+                                <div>
+                                    <h4 style="text-align: center;" class="title text-success"><b>View your Cart</b></h4>
+                                    <!--                                    <img src="img/other/cart-icon.jpg" style="width: 50px" alt="Product">-->
+                                    <!--                                    <a href="#" class="cart-clear text-danger">Clear Shoping Cart</a>-->
+                                </div><br/>
+                                <div class="table-responsive">
+                                    <table class="table axil-product-table axil-cart-table mb--40">
+                                        <thead>
+                                            <tr class="table-success">
+                                                <th scope="col" class="product-remove"></th>
+                                                <th scope="col" class="product-thumbnail"><b>Product</b></th>
+                                                <th scope="col" class="product-title"><b>Product Item Name</b></th>
+                                                <th scope="col" class="product-price"><b>Item Price</b></th>
+                                                <th scope="col" class="product-quantity"><b>Quantity</b></th>
+                                                <th scope="col" class="product-subtotal"><b>Subtotal</b></th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody id="cart-item-container"  class="table-secondary">
+
+                                            <tr id="cart-item-row">
+                                                <td class="product-remove"><a href="#" class="remove-wishlist"><i class="fal fa-times"></i></a></td>
+                                                <td class="product-thumbnail"><a href="#"><img src="images/product/product-01.png" alt="Product"></a></td>
+                                                <td class="product-title"><a href="#">Title</a></td>
+                                                <td class="product-price" data-title="Price"><span class="currency-symbol text-black">Rs. </span><span class="text-black">100,000.00</span></td>
+                                                <td class="product-quantity" data-title="Qty">
+                                                    <div class="pro-qty">
+                                                        <input type="number" class="quantity-input" value="1">
+                                                    </div>
+                                                </td>
+                                                <td class="product-subtotal" data-title="Subtotal"><span class="currency-symbol">Rs. </span><span>100,000.00</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div><br/><br/><br/><br/>
+
+                                <div class="row" > 
+                                    <div class="container col-6 ">
+                                        <div class="axil-order-summery mt--20">
+                                            <h5 class="title mb--20">Your Order Summary</h5>
+                                            <div class="summery-table-wrap">
+                                                <table class="table summery-table mb--30">
+                                                    <tbody>
+                                                        <tr class="order-subtotal">
+                                                            <td>Item Quantity :</td>
+                                                            <td class="order-total-amount text-success" id="order-total-quantity">1</td>
+                                                        </tr>
+                                                        <tr class="order-total">
+                                                            <td>Total Price :</td>
+                                                            <td class="order-total-amount text-success">Rs. <span id="order-total-amount">100,000.00</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <a href="product-checkout.html" class="axil-btn btn-success checkout-btn">Click her to Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Cart Area  -->
+                </main>
+            </div>
+        </div>
+
+        <!-- back top top -->
+        <div class="back-to-top">
+            <a href="#">
+                <i class="fa fa-long-arrow-up"></i>
+            </a>
+        </div>
+
+        <!-- Page Loader -->
+        <div id="page-preloader">
+            <div class="page-loading">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <!-- Vendor JS -->
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="libs/popper/popper.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="libs/nivo-slider/js/jquery.nivo.slider.js"></script>
+        <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+        <script src="libs/slider-range/js/tmpl.js"></script>
+        <script src="libs/slider-range/js/jquery.dependClass-0.1.js"></script>
+        <script src="libs/slider-range/js/draggable-0.1.js"></script>
+        <script src="libs/slider-range/js/jquery.slider.js"></script>
+        <script src="libs/slick-slider/js/slick.min.js"></script>
+
+        <!-- Template JS -->
+        <script src="js/theme.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/notification.js"></script>
+
+    </body>
+
+
+    <!-- product-cart07:12-->
+</html>

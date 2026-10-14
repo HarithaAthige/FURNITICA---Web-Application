@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png">
+        
+        <title>Admin Panel</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
+        <link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
+        <link rel="stylesheet" href="libs/nivo-slider/css/style.css">
+        <link rel="stylesheet" href="libs/font-material/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="libs/slider-range/css/jslider.css">
+        <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="libs/slick-slider/css/slick.css">
+        <link rel="stylesheet" href="libs/slick-slider/css/slick-theme.css">
+
+        <!-- Template CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reponsive.css">
+
+    </head>
+
+    <body onload="loadBrand();">
+
+        <div class="admin-container">
+            <aside class="sidebar col-3">
+                <h2 class="text-center">Admin Panel</h2>
+                <ul class="text-center">
+                    <li onclick="openTab('brand-t')"><h6>Register New Brand</h6></li>
+                    <li onclick="openTab('model-t')"><h6>Register New Model</h6></li>
+                    <li onclick="openTab('color-t')"><h6>Register New Color</h6></li>
+                    <li onclick="openTab('city-t')"><h6>Register New City</h6></li>
+                </ul>
+            </aside>
+
+            <main class="main-content bg-secondary">
+                <section id="brand-t" class="tab active col-6">
+                    <h3 class="text-white">Register New Brand</h3>
+                    <form>
+                        <label class="text-warning">Brand Name:</label>
+                        <input type="text" id="brand" placeholder="Enter brand name" required >
+                        <button type="submit" onclick="saveBrand();">Save Brand</button>
+                    </form>
+                </section>
+
+                <section id="model-t"  class="tab col-6">
+                    <h3 class="text-white">Register New Model</h3>
+                    <form>
+                        <label class="text-warning">Model Name:</label>
+                        <input type="text" id="model" placeholder="Enter model name" required>
+                        <label class="text-warning">Select Brand:</label>
+                        <select id="brandSelect">
+                            <option value="0">Select Brand</option>
+                            <!-- Populate with backend -->
+                        </select>
+                        <button type="submit" onclick="saveModel();">Save Model</button>
+                    </form>
+                </section>
+
+                <section id="color-t" class="tab col-6">
+                    <h3 class="text-white">Register New Color</h3>
+                    <form>
+                        <label class="text-warning">Color Name:</label>
+                        <input type="text"  id="color" placeholder="Enter color name" required>
+                        <button type="submit" onclick="saveColor();">Save Color</button>
+                    </form>
+                </section>
+
+                <section id="city-t" class="tab col-6">
+                    <h3 class="text-white">Register New City</h3>
+                    <form>
+                        <label class="text-warning">City Name:</label>
+                        <input type="text"  id="city" placeholder="Enter city name" required>
+                        <button type="submit" onclick="saveCity();">Save City</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+
+        <script src="js/main.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/adminDashboard.js"></script>
+        <script src="js/notification.js"></script> 
+    </body>
+</html>
+
