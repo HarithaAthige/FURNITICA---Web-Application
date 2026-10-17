@@ -65,3 +65,7 @@ Limitations:
 License:
 
 * This project is licensed under the MIT License.
+
+## Project Showcase
+
+Check out the project demonstration and screenshots on LinkedIn: (https://lnkd.in/p/gvhbN98t)
